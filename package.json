@@ -1,0 +1,25 @@
+{
+  "name": "tagbar",
+  "description": "tag input",
+  "version": "0.1.0",
+  "license": "MIT",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "browserify": "^13.1.0",
+    "uglifyjs": "^2.4.10"
+  },
+  "author": {
+    "name": "Martynas Bagdonas",
+    "email": "git.martynas@gmail.com"
+  },
+  "main": "tagbar.js",
+  "scripts": {
+    "dist": "browserify tagbar.js --standalone Tagbar > dist/tagbar.js",
+    "dist-min": "npm run dist && cat dist/tagbar.js | uglifyjs -c dead_code > dist/tagbar.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrtcode/tagbar.git"
+  }
+}
