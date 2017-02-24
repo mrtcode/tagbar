@@ -4,7 +4,7 @@
 
 [Demo](https://mrtcode.github.io/tagbar/demo.html)
 
-![](https://mrtcode.github.io/tagbar/images/tagbar.png)
+[![](https://mrtcode.github.io/tagbar/images/tagbar.png)](https://mrtcode.github.io/tagbar/demo.html)
 
 Write tags
 
