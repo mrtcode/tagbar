@@ -4,6 +4,8 @@
 
 [Demo](https://mrtcode.github.io/tagbar/demo.html)
 
+![](https://mrtcode.github.io/tagbar/images/tagbar.png)
+
 Write tags
 
 Insert/remove tags
@@ -14,7 +16,7 @@ Insert/remove tags
 
 ## Usage
 
-Download [Tagbar]() and include `tagbar.js` and `tagbar.css` files on your page.
+Download [Tagbar](https://github.com/mrtcode/tagbar/releases) and include `tagbar.js` and `tagbar.css` files on your page.
 
 ```
     <link rel="stylesheet" href="tagbar.css">
@@ -23,13 +25,17 @@ Download [Tagbar]() and include `tagbar.js` and `tagbar.css` files on your page.
 
 Alternatively, you can require it as a module if you use Browserify
 
-```
+```js
     var tagbar = require('./tagbar.js');
 ```
 
-Create a tagbar inside a container. Pass an element or element id as a container.
+Create a tagbar inside a container. Pass an element or element id as a container parameter.
 
+```html
+<div id="container-id"></div>
 ```
+
+```js
     var tagbar = new Tagbar({
         container: 'container-id',
     });
@@ -41,7 +47,7 @@ Create a tagbar inside a container. Pass an element or element id as a container
 
 Attach event handlers
 
-```
+```js
 var tagbar = new Tagbar({
     container: 'container-id',
     onAdd: function (tag) {
